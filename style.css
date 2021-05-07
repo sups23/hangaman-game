@@ -1,0 +1,69 @@
+.letters {
+    padding: 30px;
+    max-width: 200px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.letter-box {
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid lightslategrey;
+    margin: 5px;
+    padding: 8px;
+}
+
+.letter-box:hover {
+    background-color: lightslategrey;
+    color: white;
+}
+
+.hint {
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: green;
+}
+.unknown-word {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.empty-letter-box {
+    margin: 30px 5px;
+    font-size: 2rem;
+    text-align: center;
+    width: 40px;
+    border-bottom: 2px solid black;
+}
+.empty-letter-box.empty {
+    border-bottom: none;
+}
+
+main {
+    width: 90%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remaining-lives {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.letter-box.clicked {
+    cursor: not-allowed;
+    text-decoration: line-through;
+    background-color: lightcoral;
+    border-color: lightcoral;
+}
+
+.message-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
